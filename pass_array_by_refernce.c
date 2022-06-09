@@ -21,21 +21,16 @@ int main()
      }
      return 0;
 }
+//
+//
 
 
-//
-//
-//
-//
-//
-//
 
 
 #include<stdio.h>
-
-change_array(int *pointer){
+change_array(int *pointer,int n){
     int j;
-    for(j=0;j<5;j++){
+    for(j=0;j<n;j++){
         *pointer++;
         pointer++;
     }
@@ -49,7 +44,7 @@ int main(){
     }
     printf("\n\n");
 
-    change_array(&array);
+    change_array(&array,5);
 
     for(i=0;i<5;i++){
         printf("%d ",array[i]);
